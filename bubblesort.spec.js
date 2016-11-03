@@ -9,8 +9,12 @@ describe('Bubble Sort', function() {
 		expect( bubbleSort(testArr) ).toEqual( [1,2,3,4,5,6,7,8] )
 	});
 
-	it('tracks the nubmer of times bubbleSort has been called', function() {
-		expect( bubbleSort.calls.count() ).toEqual();
+	it('tracks the number of times bubbleSort has been called', function() {
+		expect( bubbleSort.calls.count(4) ).toEqual();
 	});
+
+	it('tracks the number of times swap has been called', function() {
+		expect( swap.calls.count(9) ).toEqual();
+	})
 });
 
