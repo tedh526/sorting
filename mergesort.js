@@ -23,10 +23,12 @@ var merge = function(array1, array2, mergedArray = []) {
 }
 
 var mergeSort = function(array) {
+	var splitArray = split(array);
 
 
-
-
-
-
+	if (array[0].length === 1) {
+		return array;
+	} else {
+		mergeSort(array)
+	}
 }
